@@ -4,17 +4,12 @@
 //
 
 #include <iostream>
-
-// Ваші файли загловки 
-//
-#include "Lab6Example.h"
+#include <Task3.h>
 int main()
 {
     std::cout << " Lab #6  !\n";
-    //  Код виконання завдань
-    //  Головне меню завдань
-    //  Функції та класи можуть знаходитись в інших файлах проекту
 
-    Example();
-
+    std::cout << "Task 1: Virtual inheritances" << std::endl;
+    std::cout << "Task 2: Virtual functions and classes" << std::endl;
+    std::cout << "Task 3: Multiple inheritances" << std::endl;
 }
