@@ -14,24 +14,24 @@ protected:
 public:
     Data() : value(0.0)
     {
-        cout << "[+] Створено базовий об'єкт: Data" << endl;
+        cout << "[+] Data" << endl;
     }
 
     virtual ~Data()
     {
-        cout << "[-] Вилучено базовий об'єкт: Data" << endl;
+        cout << "[-] Data" << endl;
     }
 
     void inputFromKeyboard()
     {
-        cout << "Введіть числове значення: ";
+        cout << "Input number: ";
         cin >> value;
     }
 
     void generateRandom()
     {
         value = rand() % 1000;
-        cout << ">>> Згенеровано випадкове значення: " << value << endl;
+        cout << "Random value: " << value << endl;
     }
 
     void loadFromFile(const string& filename)
@@ -40,10 +40,10 @@ public:
         if (inFile.is_open())
         {
             inFile >> value;
-            cout << ">>> Дані зчитано з файлу '" << filename << "'" << endl;
+            cout << "File read:  '" << filename << "'" << endl;
             inFile.close();
         }
-        else cout << "Помилка відкриття файлу для читання!" << endl;
+        else cout << "Failed to open file" << endl;
     }
 
     virtual void display() const = 0;

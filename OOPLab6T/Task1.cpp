@@ -29,6 +29,23 @@ void task1()
     Class7 class7 = Class7();
     VirtualClass7 virtual7 = VirtualClass7();
 
+    std::cout << "Non-Virtual Class" << std::endl;
+    std::cout << "Size of Class1: " << sizeof(Class1) << std::endl;
+    std::cout << "Size of Class2: " << sizeof(Class2) << std::endl;
+    std::cout << "Size of Class3: " << sizeof(Class3) << std::endl;
+    std::cout << "Size of Class4: " << sizeof(Class4) << std::endl;
+    std::cout << "Size of Class5: " << sizeof(Class5) << std::endl;
+    std::cout << "Size of Class6: " << sizeof(Class6) << std::endl;
+    std::cout << "Size of Class7: " << sizeof(Class7) << std::endl;
     std::cout << "Class structure size : " << sizeof(class7) << std::endl;
+
+    std::cout << std::endl << "VirtualClass" << std::endl;
+    std::cout << "Size of VirtualClass1: " << sizeof(VirtualClass1) << std::endl;
+    std::cout << "Size of VirtualClass2: " << sizeof(VirtualClass2) << std::endl;
+    std::cout << "Size of VirtualClass3: " << sizeof(VirtualClass3) << std::endl;
+    std::cout << "Size of VirtualClass4: " << sizeof(VirtualClass4) << std::endl;
+    std::cout << "Size of VirtualClass5: " << sizeof(VirtualClass5) << std::endl;
+    std::cout << "Size of VirtualClass6: " << sizeof(VirtualClass6) << std::endl;
+    std::cout << "Size of VirtualClass7: " << sizeof(VirtualClass7) << std::endl;
     std::cout << "VirtualClass structure size : " << sizeof(virtual7) << std::endl;
 }
